@@ -13,8 +13,9 @@
 }
 
 .headerOptions__icon {
-  display: flex;
-  flex-direction: row;
+  object-fit: contain;
+  height: 25px !important;
+  width: 25px !important;
 }
 
 .headerOptions:hover {

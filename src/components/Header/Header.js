@@ -34,6 +34,7 @@ const header = () => {
           Icon={NotificationsIcon}
           Title="Notifications"
         ></HeaderOptions>
+        <HeaderOptions avatar="" Title="Me"></HeaderOptions>
       </div>
     </div>
   );
