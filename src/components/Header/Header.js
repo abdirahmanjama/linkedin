@@ -7,6 +7,7 @@ import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
 import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 import ChatIcon from "@material-ui/icons/Chat";
 import NotificationsIcon from "@material-ui/icons/Notifications";
+import Avatar from "@material-ui/core/Avatar";
 
 const header = () => {
   return (
@@ -34,7 +35,7 @@ const header = () => {
           Icon={NotificationsIcon}
           Title="Notifications"
         ></HeaderOptions>
-        <HeaderOptions avatar="" Title="Me"></HeaderOptions>
+        <HeaderOptions Icon={Avatar} Title="Me"></HeaderOptions>
       </div>
     </div>
   );
