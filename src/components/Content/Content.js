@@ -49,9 +49,7 @@ const Content = () => {
               onChange={(e) => setInput(e.target.value)}
               type="text"
             />
-            <button onClick={sendPost} type="submit">
-              Send
-            </button>
+            <button onClick={sendPost} type="submit"></button>
           </form>
         </div>
 
