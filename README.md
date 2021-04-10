@@ -1,3 +1,16 @@
+This LinkedIn clone was created using React, Redux and Firebase. 
+
+https://user-images.githubusercontent.com/45077645/114279979-1ae09b80-9a2f-11eb-9d12-28a5cc2741bd.PNG
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
