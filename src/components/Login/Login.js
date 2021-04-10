@@ -11,8 +11,22 @@ function Login() {
   const [email, setEmail] = useState("");
   const [profilePic, setProfilePic] = useState("");
   const dispatch = useDispatch();
+
   const loginToApp = (e) => {
     e.preventDefault();
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((userAuth) => {
+        dispatch(
+          login({
+            email: userAuth.email,
+            uid: userAuth.uid,
+            displayName: name,
+            photoUrl: userAuth.user.photoURL,
+          })
+        );
+      })
+      .catch((error) => alert(error));
   };
 
   const register = () => {

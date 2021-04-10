@@ -8,6 +8,8 @@ import Content from "./components/Content/Content";
 import News from "./components/News/News";
 import Login from "./components/Login/Login";
 import { auth } from "./components/Content/Firebase";
+import Footer from "./components/Footer/Footer";
+
 function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
@@ -44,7 +46,8 @@ function App() {
           <News></News>
         </div>
       )}
-      0{/* {!user ? <Login/> : */}
+      <Footer></Footer>
+      {/* {!user ? <Login/> : */}
       {/*Sidepanel Component*/}
       {/*Main Section*/}
       {/*News Component*/}
