@@ -8,6 +8,7 @@ import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 import ChatIcon from "@material-ui/icons/Chat";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import Avatar from "@material-ui/core/Avatar";
+import PersonIcon from "@material-ui/icons/Person";
 
 const header = () => {
   return (
@@ -19,7 +20,7 @@ const header = () => {
         />
         <div className="header__search">
           <SearchIcon></SearchIcon>
-          <input type="text" />
+          <input type="text" placeholder="Search" />
         </div>
       </div>
       <div className="header__right">
@@ -35,7 +36,7 @@ const header = () => {
           Icon={NotificationsIcon}
           Title="Notifications"
         ></HeaderOptions>
-        <HeaderOptions Icon={Avatar} Title="Me"></HeaderOptions>
+        <HeaderOptions Icon={PersonIcon} Title="Me"></HeaderOptions>
       </div>
     </div>
   );
