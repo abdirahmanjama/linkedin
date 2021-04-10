@@ -1,6 +1,6 @@
 This LinkedIn clone was created using React, Redux and Firebase. 
 
-https://user-images.githubusercontent.com/45077645/114279979-1ae09b80-9a2f-11eb-9d12-28a5cc2741bd.PNG
+![alt text](https://user-images.githubusercontent.com/45077645/114279979-1ae09b80-9a2f-11eb-9d12-28a5cc2741bd.PNG)
 
 
 
