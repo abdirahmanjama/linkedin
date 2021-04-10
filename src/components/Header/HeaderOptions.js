@@ -1,9 +1,9 @@
 import React from "react";
 import "./HeaderOptions.css";
 
-function HeaderOptions({ Title, Icon, Avatar }) {
+function HeaderOptions({ Title, Icon, Avatar, onClick }) {
   return (
-    <div className="headerOptions">
+    <div onClick={onClick} className="headerOptions">
       {Icon && <Icon className="headerOptions__Icon" />}
       {Avatar && <Avatar className="headerOptions__Icon" src={Avatar} />}
 

@@ -3,17 +3,21 @@ import { auth } from "../Content/Firebase";
 import "./Login.css";
 import logo from "./Logo.png";
 import { useDispatch } from "react-redux";
+import { login } from "../../features/userSlice";
 
 function Login() {
-  const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
   const [profilePic, setProfilePic] = useState("");
   const dispatch = useDispatch();
+  const loginToApp = (e) => {
+    e.preventDefault();
+  };
 
   const register = () => {
     if (!name) {
-      return alert("Please enter full name");
+      return alert("Please enter a full name");
     }
 
     auth
@@ -24,61 +28,57 @@ function Login() {
             displayName: name,
             photoURL: profilePic,
           })
-          .then(() => {
+          .then(
             dispatch(
               login({
-                email: userAuth.user.email,
-                uid: userAuth.user.uid,
+                email: userAuth.email,
+                uid: userAuth.uid,
                 displayName: name,
                 photoUrl: profilePic,
               })
-            );
-          });
+            )
+          );
       })
-      .catch((error) => alert(error.message));
-  };
-
-  const login = (e) => {
-    e.preventDefault();
+      .catch((error) => alert(error));
   };
   return (
     <div className="login">
-      <img src={logo} alt="logo" />
+      <img src={logo} alt="logo"></img>
 
       <form>
         <input
-          placeholder="Full name"
+          type="text"
           value={name}
-          type="text"
+          placeholder="Full Name"
           onChange={(e) => setName(e.target.value)}
-        ></input>
+        />
         <input
-          placeholder="Profile Picture"
           type="text"
+          placeholder="Profile Pic"
           value={profilePic}
           onChange={(e) => setProfilePic(e.target.value)}
         ></input>
         <input
+          type="text"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          type="text"
-        ></input>
+        />
         <input
+          type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          type="password"
-        ></input>
-        <button type="submit" onClick={register}>
+        />
+        <button type="submit" onClick={loginToApp}>
           Sign In
         </button>
       </form>
 
       <p>
-        Not a member?
+        Don't have an account?{" "}
         <span className="login__register" onClick={register}>
-          Register Now
+          Register now!
         </span>
       </p>
     </div>
