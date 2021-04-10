@@ -1,8 +1,14 @@
+LinkedIn is a professional networking site. It provides a huge platform for millions of professionals to exchange views, information, opportunity & ideas related to the business world professionals.
+
 This LinkedIn clone was created using React, Redux and Firebase. 
+
+Login/Registration page: 
 
 ![alt text](https://user-images.githubusercontent.com/45077645/114279979-1ae09b80-9a2f-11eb-9d12-28a5cc2741bd.PNG)
 
+Home-page: 
 
+![alt_text](https://user-images.githubusercontent.com/45077645/114279980-1b793200-9a2f-11eb-8b1a-e0060acff2d5.PNG)
 
 
 
